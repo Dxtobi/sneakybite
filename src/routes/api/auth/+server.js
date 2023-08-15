@@ -20,10 +20,9 @@ export async function POST({ request, locals }) {
             throw error(400, 'email already exist');
         }
         const pass = await bcrypt.hash(body.password, 10)
-
        // console.log(pass)
         await locals.CUSTOMER.create({
-            email: body.email,
+            email: body.email.toLowerCase(),
             password: pass,
             userAuthToken: crypto.randomUUID(),
             name: body.name,
@@ -47,7 +46,7 @@ export async function PUT({ request, locals, cookies }) {
 
     try {
         const body = await request.json()
-        const customer = await locals.CUSTOMER.findOne({ email: body.email })
+        const customer = await locals.CUSTOMER.findOne({ email: body.email.toLowerCase() })
 
        // console.log(body.password, customer)
 

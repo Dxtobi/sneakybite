@@ -5,6 +5,6 @@ const cart = await locals.CART.findOne({ customer: locals.customer?._id }).popul
  
   return {
     customer: locals.customer,
-    cartItem:cart.items.length
+    cartItem:cart ? cart.items?.length : 0
   }
 };

@@ -28,15 +28,18 @@
 
 		if (result.type === 'success') {
 			// re-run all `load` functions, following the successful update
-      console.log('success')
+      console.log(result)
 			await invalidateAll();
 		}
 		if (result.error) {
-			form = result.message;
+			sending = false;
+			return form = result.message;
+
 		}
 
 		sending = false;
-		//console.log(result);
+		console.log(result);
+
 		applyAction(result);
 		goto('/');
 	};

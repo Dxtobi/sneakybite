@@ -4,6 +4,7 @@ export const load = async ({ locals }) => {
 
 
     try {
+       // const customer = await event.locals.CUSTOMER.findOne({ userAuthToken: session }).select('-password').exec()
         const topRatedFoods = await locals.FOOD.find()
             .sort({ ratingCount: -1 }) // Sort in descending order based on ratingCount
             .limit(5);
@@ -22,6 +23,7 @@ export const load = async ({ locals }) => {
         //console.log(data)
         return {
             foods: serializeNonPOJOs([...topRatedFoods, ...data, ...fastFoods]),
+            customer: locals.customer
         };
     } catch (error) {
 

@@ -34,7 +34,7 @@ export const handle = async ({ event, resolve }) => {
  
     if (!session) {
       // if there is no session load page as normal
-      
+     console.log('no session')
       return await resolve(event)
     }
    //console.log(session)
@@ -47,8 +47,10 @@ export const handle = async ({ event, resolve }) => {
     //  console.log('locals',event.locals.user)
     } 
 
-    
+    //let timeCalled = 0
     const response = await resolve(event);
+   // timeCalled =timeCalled++
+   // console.log(event.locals, timeCalled)
     await dbDisconnect();
     return response;
   } catch (error) {
