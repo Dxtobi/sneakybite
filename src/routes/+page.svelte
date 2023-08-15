@@ -137,8 +137,8 @@
 		<div class="p-3">
 			{#if !customer}
 				<div class="flex gap-2 items-center my-3">
-					<a href="/login" class=" bg-[#0e0e0e] text-white p-3 rounded-xl">Login</a>
-					<a href="/register" class=" bg-[#0e0e0e] text-white p-3 rounded-xl">Register</a>
+					<a href="/login" class=" bg-[#0e0e0e] text-white p-3 rounded-lg">Login</a>
+					<a href="/register" class=" bg-[#0e0e0e] text-white p-3 rounded-lg ml-2">Register</a>
 				</div>
 			{:else}
 				<div class="mb-8 flex justify-between items-center">
@@ -152,8 +152,8 @@
 
 				{#if customer?.role.toLowerCase() === 'admin'}
 					<div class="flex gap-2 items-center my-3">
-						<a href="/newpost" class=" bg-[#ff7622] text-white p-3 rounded-xl">Add To Menu</a>
-						<a href="/adminedite" class=" bg-[#ff7622] text-white p-3 rounded-xl">View Menu</a>
+						<a href="/newpost" class=" bg-[#ff7622] text-white p-3 rounded-lg">Add To Menu</a>
+						<a href="/adminedite" class=" bg-[#ff7622] text-white p-3 rounded-lg ml-2">View Menu</a>
 					</div>
 				{/if}
 			{/if}
