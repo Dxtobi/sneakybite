@@ -12,7 +12,7 @@ export async function POST({ request, locals }) {
 
     try {
         const body = await request.json()
-        const customer = await locals.CUSTOMER.findOne({ email: body.email })
+        const customer = await locals.CUSTOMER.findOne({ email: body.email.toLowerCase() })
 
         //console.log(body)
 

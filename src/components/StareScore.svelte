@@ -9,8 +9,18 @@
 
 	export let total = 0;
 	export let ratinsnumber = 0;
+    /**
+	 * @type {number}
+	 */
+    let rating
 
-	const rating = total / ratinsnumber;
+    if (total===0 || ratinsnumber===0) {
+        rating = 1.20
+    }else{
+
+        rating = total / ratinsnumber;
+    }
+   
    
 	//const rating1 = Math.floor(ratinsnumber/total)
 

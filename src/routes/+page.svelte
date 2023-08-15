@@ -118,48 +118,49 @@
 <svelte:head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>EX-TV Movie App - Discover and Enjoy food</title>
+	<title>FoodieDeliver - Discover and Savor Delightful Food</title>
 	<meta
 		name="description"
-		content="Explore and enjoy a wide range of food with our food app. Find information, trailers, and more."
+		content="Explore and indulge in a diverse array of culinary delights with our food delivery app. Find menus, reviews, and more."
 	/>
 	<meta
 		name="keywords"
-		content="food app, food, film, entertainment, trailers, reviews, download film, where to download"
+		content="food delivery app, food, cuisine, menus, reviews, order food online, restaurant delivery"
 	/>
-	<meta name="author" content="@programmer_dex " />
+	<meta name="author" content="@foodiedeliver_app" />
 
 	<!-- Open Graph Meta Tags for Social Sharing -->
 	<meta
 		property="og:title"
-		content="EX-TV Download or Request for Movie - Discover and Enjoy food"
+		content="FoodieDeliver - Order and Savor Delightful Food with Ease"
 	/>
 	<meta
 		property="og:description"
-		content="Download or Request for Movie Explore and enjoy a wide range of food with our food app. Find information, trailers, and more."
+		content="Order and savor a variety of culinary delights with FoodieDeliver. Explore menus, read reviews, and more."
 	/>
 	<meta
 		property="og:image"
-		content="https://i.pinimg.com/564x/00/c0/66/00c0666926b6dda0ec071db5fff01a9e.jpg"
+		content="https://i.pinimg.com/564x/c3/7f/89/c37f891eff73d14d43a1e3ab3aba2ba3.jpg"
 	/>
-	<meta property="og:url" content="https://extvweb.vercel.app/" />
+	<meta property="og:url" content="https://foodiedeliverapp.com/" />
 	<meta property="og:type" content="website" />
 
 	<!-- Twitter Card Meta Tags for Social Sharing -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta
 		name="twitter:title"
-		content="EX-TV Download or Request for Movie  - Discover and Enjoy food"
+		content="FoodieDeliver - Order and Savor Delightful Food with Ease"
 	/>
 	<meta
 		name="twitter:description"
-		content="Explore and enjoy a wide range of food with our food app. Find information, trailers, and more."
+		content="Order and savor a variety of culinary delights with FoodieDeliver. Explore menus, read reviews, and more."
 	/>
 	<meta
 		name="twitter:image"
-		content="https://i.pinimg.com/564x/00/c0/66/00c0666926b6dda0ec071db5fff01a9e.jpg"
+		content="https://i.pinimg.com/564x/c3/7f/89/c37f891eff73d14d43a1e3ab3aba2ba3.jpg"
 	/>
 </svelte:head>
+
 
 <section class="w-full">
 	<div>
