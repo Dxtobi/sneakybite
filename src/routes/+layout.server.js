@@ -1,6 +1,4 @@
-export const config = {
-  runtime: 'edge',
-};
+
 
 export const load = async ({locals}) => {
   //console.log(locals.user)
