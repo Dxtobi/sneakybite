@@ -34,6 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"@cloudinary/url-gen": "^1.11.1",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@types/express": "^4.17.17",
 		"bcrypt": "^5.1.0",
 		"buffer-to-stream": "^1.0.0",

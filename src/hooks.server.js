@@ -34,7 +34,7 @@ export const handle = async ({ event, resolve }) => {
  
     if (!session) {
       // if there is no session load page as normal
-     console.log('no session')
+     console.log('no-customer')
       return await resolve(event)
     }
    //console.log(session)
@@ -42,7 +42,7 @@ export const handle = async ({ event, resolve }) => {
    
   // if `user` exists set `events.local`
     if (customer) {
-     // console.log(customer)
+      console.log('has-customer')
       event.locals.customer =  serializeNonPOJOs(customer._doc)
     //  console.log('locals',event.locals.user)
     } 
