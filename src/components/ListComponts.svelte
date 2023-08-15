@@ -15,7 +15,7 @@
    
 </script>
 
-<div class=" relative w-full bg-white rounded-lg p-2 mb-3">
+<div class=" relative w-full bg-white rounded-lg p-2 mb-3 aspect-auto">
   <a href={`/food/${food._id}`} class=" rounded-2xl my-2 w-full">
     <img src={food.imageURL} alt='' class="w-full  rounded-lg object-cover"/>
    

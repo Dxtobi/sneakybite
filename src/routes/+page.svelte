@@ -231,21 +231,23 @@
 </section>
 
 <section class="mt-4 p-3">
-	<h2 class="  mb-5">Recommended</h2>
-	<div class=" colume py-2" >
-		<a href="/all"  class="flex justify-between gap-1 p-1  rounded-lg bg-[#fbe5ab] items-center  mb-2 h-[40px]">
-			<div class="bg-white rounded-lg w-[35%] h-full flex justify-center items-center shadow-sm"><Icon src={AiOutlineArrowRight} /></div>
-			<div class="px-3">View all</div>
-		</a>
-		{#each remainingFood as food}
-			<ListComponts {food} />
-		{/each}
-	</div>
+    <h2 class="mb-5">Recommended</h2>
+    <div class=" columns-2 py-2">
+        <a href="/all" class="flex justify-between gap-1 p-1 rounded-lg bg-[#fbe5ab] items-center mb-2 w-full aspect-auto">
+            <div class="bg-white rounded-lg w-[35%] h-[30px] flex justify-center items-center shadow-sm">
+                <Icon src={AiOutlineArrowRight} />
+            </div>
+            <div class="px-3">View all</div>
+        </a>
+        {#each remainingFood as food}
+            <ListComponts {food} />
+        {/each}
+    </div>
 </section>
 
 <style>
-	.colume {
-		columns: 2;
-		break-inside: avoid;
-	}
+    .column {
+        columns: 2;
+        break-inside: avoid;
+    }
 </style>
