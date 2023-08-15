@@ -64,51 +64,7 @@ import BookmarkComponent from '../../../components/BookmarkComponent.svelte';
     
 </script>
 
-<svelte:head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>FoodieDeliver - Discover and Savor Delightful Food</title>
-	<meta
-		name="description"
-		content={food.description}
-	/>
-	<meta
-		name="keywords"
-		content="food delivery app, food, cuisine, menus, reviews, order food online, restaurant delivery"
-	/>
-	<meta name="author" content="@foodiedeliver_app" />
 
-	<!-- Open Graph Meta Tags for Social Sharing -->
-	<meta
-		property="og:title"
-		content={food.name}
-	/>
-	<meta
-		property="og:description"
-		content={food.description}
-	/>
-	<meta
-		property="og:image"
-		content={food.imageURL}
-	/>
-	<meta property="og:url" content="https://sneakybite.vercel.app/" />
-	<meta property="og:type" content="website" />
-
-	<!-- Twitter Card Meta Tags for Social Sharing -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta
-		name="twitter:title"
-		content={food.name}
-	/>
-	<meta
-		name="twitter:description"
-		content={food.description}
-	/>
-	<meta
-		name="twitter:image"
-		content={food.imageURL}
-	/>
-</svelte:head>
 
 
 
