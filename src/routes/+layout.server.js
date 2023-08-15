@@ -1,0 +1,10 @@
+
+export const load = async ({locals}) => {
+  //console.log(locals.user)
+const cart = await locals.CART.findOne({ customer: locals.customer?._id }).populate('items.food')
+ 
+  return {
+    customer: locals.customer,
+    cartItem:cart.items.length
+  }
+};
