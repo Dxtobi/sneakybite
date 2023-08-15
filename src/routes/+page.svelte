@@ -42,37 +42,7 @@
 		// Add more genres and emojis as needed
 	];
 
-	const contactList = [
-		{
-			name: 'Email',
-			icon: AiOutlineMail,
-			link: 'mailto:akanbijosephtobi@gmail.com?subject=From-Potfoli=',
-			color: '#e30707',
-			color_lite: '#80B5FF' // Lighter version of LinkedIn blue
-		},
-		{
-			name: 'Twitter',
-			icon: SiTwitter,
-			link: 'https://twitter.com/programmer_dex',
-			color: '#1DA1F2',
-			color_lite: '#A7D7FF' // Lighter version of Twitter blue
-		},
-		{
-			name: 'Wapp',
-			icon: AiOutlineWhatsApp,
-			link: 'https://wa.me/9064923080?text=Hello%20i%20have%20question%20about%20your%20service%20can%20you%20help%3F',
-			color: '#25D366',
-			color_lite: '#A4F0B4' // Lighter version of WhatsApp green
-		},
-		{
-			name: 'Telgram',
-			icon: FaBrandsTelegramPlane,
-			link: 'https://t.me/officialextv',
-			color: '#0088CC',
-			color_lite: '#66B3E6' // Lighter version of Telegram blue
-		}
-	];
-
+	console.log(data)
 	//console.log($page.data.customer)
 	/**
 	 * @type {string | any[]}
@@ -177,10 +147,10 @@
 						<div>Welcome Lets Cook!!</div>
 					</div>
 
-					<img src={customer.avatar} alt="" class="w-[50px] rounded-full h-[50px]" />
+					<img src={customer?.avatar} alt="" class="w-[50px] rounded-full h-[50px]" />
 				</div>
 
-				{#if customer.role.toLowerCase() === 'admin'}
+				{#if customer?.role.toLowerCase() === 'admin'}
 					<div class="flex gap-2 items-center my-3">
 						<a href="/newpost" class=" bg-[#ff7622] text-white p-3 rounded-xl">Add To Menu</a>
 						<a href="/adminedite" class=" bg-[#ff7622] text-white p-3 rounded-xl">View Menu</a>

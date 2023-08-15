@@ -1,7 +1,5 @@
 import { serializeNonPOJOs } from '$lib/utils/utils.js';
-export const config = {
-    runtime: 'edge',
-  };
+
 export const load = async ({ locals }) => {
 
 
