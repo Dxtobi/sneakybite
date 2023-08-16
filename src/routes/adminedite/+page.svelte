@@ -70,7 +70,7 @@ import Icon from 'svelte-icons-pack/Icon.svelte';
 <div class="p-5 ">
     <h2 class="my-10">Admin- Movie List -- {data.foods.length}</h2>
 
-    <div class=" flex items-center border-[#ff8b8b] rounded-2xl border-2 bg-[#ff8b8b41]">
+    <div class=" flex items-center border-[#000000] rounded-sm border-2 bg-[#ffffff]">
         <input
           class="w-full px-4 py-2   rounded-2xl bg-transparent"
           type="text"
@@ -79,7 +79,7 @@ import Icon from 'svelte-icons-pack/Icon.svelte';
           placeholder="John Wick"
           bind:value={searchValue}
         />
-        <button class="bg-[#f54949] border px-4 py-2 rounded-r-2xl" on:click={search}>
+        <button class="bg-[#ffffff] border px-4 py-2 rounded-r-2xl" on:click={search}>
             <Icon src={AiOutlineSearch} size='25' color='white'/>
         </button>
       </div>
