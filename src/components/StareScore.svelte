@@ -1,7 +1,7 @@
 <!-- Rating.svelte -->
 
 <script>
-	import RiMapEBike2Line from "svelte-icons-pack/ri/RiMapEBike2Line";
+	
 	import FaSolidStar from 'svelte-icons-pack/fa/FaSolidStar';
 	import BsEmojiLaughingFill from 'svelte-icons-pack/bs/BsEmojiLaughingFill';
 	// @ts-ignore
@@ -67,10 +67,7 @@
             <div>{isNaN(ratinsnumber)?"":ratinsnumber}</div>
         </div>
 
-        <div class=" flex gap-2 items-center">
-            <Icon src={RiMapEBike2Line} size="20" />
-            <div>400</div>
-        </div>
+       
 
     </div>
 </div>
