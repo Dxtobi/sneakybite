@@ -113,7 +113,6 @@ import BookmarkComponent from '../../../components/BookmarkComponent.svelte';
 </svelte:head>
 
 
-
 <div class="">
     <img src={food.imageURL} alt=""/>
     <a href="/" class="fixed top-20 right-3 p-3 bg-[#0000004b] rounded-full h-[50px] flex justify-center items-center w-[50px] border-2 border-[#ffffff] text-white backdrop-blur-[10px]"> <Icon src={AiOutlineArrowLeft} color="white" size="20" /></a>
@@ -128,7 +127,7 @@ import BookmarkComponent from '../../../components/BookmarkComponent.svelte';
     </div>
     <div class="flex gap-3 px-5 flex-wrap">
         {#each food.category as gen }
-            <div class="capitalize bg-[#ffffff] p-3 rounded-lg">{gen}</div>
+            <div class="capitalize bg-[#ffffff] p-3 rounded-lg mr-2">{gen}</div>
         {/each}
     </div>
     <div class="p-5">
@@ -141,7 +140,7 @@ import BookmarkComponent from '../../../components/BookmarkComponent.svelte';
 <h1 class=" capitalize text-lg  p-5">ingredients:</h1>
 <div class="flex gap-3 px-5 flex-wrap">
     {#each food.ingredients as gen }
-        <div class="capitalize bg-[#ffbc00] text-white p-3 rounded-lg">{gen}</div>
+        <div class="capitalize bg-[#ffbc00] text-white p-3 rounded-lg mr-2">{gen}</div>
     {/each}
 </div>
 
