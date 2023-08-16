@@ -44,7 +44,7 @@ async function addToCart() {
             loading = false;
             items = 1;
 
-            cartItems.set(res.items.length);
+            return cartItems.set(res.items.length);
         }
 
         
@@ -53,7 +53,7 @@ async function addToCart() {
         items = 1;
 
        
-        console.log(res)
+        console.log(response)
     
        } catch (error) {
         loading = false
