@@ -4,7 +4,7 @@ import { error, fail, json } from '@sveltejs/kit';
 
 
 
-//POST COMMENT AND RATINGS
+//HADD NEW OR UPDATE CART
 export async function POST({request,  url, locals }) {
 
     if (!locals.customer) {
@@ -42,7 +42,7 @@ export async function POST({request,  url, locals }) {
         throw error(400, 'something went wrong');
     }
     //console.log(resp)
-        return json(resp) ;
+    return json(resp) ;
     
 }
 
