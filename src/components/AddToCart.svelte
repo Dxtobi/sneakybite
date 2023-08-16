@@ -40,11 +40,19 @@ async function addToCart() {
         });
 
         const res = await response.json();
+        if (response.ok) {
+            loading = false;
+            items = 1;
+
+            cartItems.set(res.items.length);
+        }
+
+        
        
         loading = false
         items = 1;
 
-        cartItems.set(res.items.length)
+       
         console.log(res)
     
        } catch (error) {
