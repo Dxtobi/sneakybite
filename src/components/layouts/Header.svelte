@@ -30,15 +30,15 @@
 
 		<a href="/" class="custom-text text-lg">SneakiBit</a>
 		{#if $page.data.customer}
-			<button class=" relative" on:click={() => (openSideBar = !openSideBar)}>
+			<a href="/mycart" class=" relative" >
 				{#if items_ > 0 }
 				<div class="flex justify-center items-center rounded-full text-xs w-[20px] h-[20px] text-white  bg-red-700  absolute top-[-10px] right-[-10px]">{items_>9?"9+":items_}</div>
 				{/if}
 				<Icon src={RiFinanceShoppingCartLine} size={'25'} />
-			</button>
+			</a>
 		{:else}
 			<div>
-				<a href="/login" class="p-3 font-bold">LOGIN</a>
+				<a href="/login" class=" font-bold">LOGIN</a>
 			</div>
 		{/if}
 	</div>

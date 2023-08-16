@@ -233,7 +233,7 @@
 <section class="mt-4 p-3">
     <h2 class="mb-5">Recommended</h2>
     <div class=" columns-2 py-2">
-        <a href="/all" class="flex justify-between gap-1 p-1 rounded-lg bg-[#fbe5ab] items-center mb-2 w-full aspect-auto">
+        <a href="/all" class=" justify-between gap-1 p-1 rounded-lg bg-[#fbe5ab] items-center mb-2 w-full aspect-auto col-item inline-flex">
             <div class="bg-white rounded-lg w-[35%] h-[30px] flex justify-center items-center shadow-sm">
                 <Icon src={AiOutlineArrowRight} />
             </div>
@@ -246,8 +246,12 @@
 </section>
 
 <style>
-    .column {
-        columns: 2;
-        break-inside: avoid;
-    }
+  
+	.column {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    justify-content: center;
+    /* grid-auto-rows: auto; */
+    grid-gap: inherit;
+}
 </style>

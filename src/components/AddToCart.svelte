@@ -57,7 +57,7 @@ async function addToCart() {
 
 <div class="fixed bottom-10 w-[90%] left-0 right-0 bg-[#0007] flex justify-between p-3 rounded-lg text-white m-auto backdrop-blur-[10px]">
     <div class="flex gap-2 items-center">
-        <button on:click={reduce__} class="text-xl p-3 rounded-lg flex justify-center items-center bg-[#cbcbcbd6]" >-</button><div>{items}</div><button on:click={add} class="text-xl p-3 rounded-lg flex justify-center items-center bg-[#cbcbcbd6]">+</button>
+        <button on:click={reduce__} class="text-white text-2xl rounded-sm bg-black h-[30px] w-[30px]" >-</button><div>{items}</div><button on:click={add} class="text-white text-2xl rounded-sm bg-black h-[30px] w-[30px]">+</button>
     </div>
-    <button class="text-xl p-3 rounded-lg  bg-[#dd4444d6]" on:click={addToCart} >{loading?"Please wait":"Add"}</button>
+    <button class="text-white  rounded-sm bg-black p-2" on:click={addToCart} >{loading?"Please wait":"Add"}</button>
 </div>
