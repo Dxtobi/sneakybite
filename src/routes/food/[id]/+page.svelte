@@ -1,5 +1,7 @@
 
 <script>
+	import { ToCurrency } from '$lib/utils/utils';
+
 	
   import AddToCart from '../../../components/AddToCart.svelte';
 import BookmarkComponent from '../../../components/BookmarkComponent.svelte';
@@ -118,7 +120,7 @@ import BookmarkComponent from '../../../components/BookmarkComponent.svelte';
     <div class="p-5 flex justify-between">
        <div>
             <h1 class="capitalize text-2xl font-bold">{food.name} </h1>    
-            <div class="text-lg">₦{food.price}</div>
+            <div class="text-lg">{ToCurrency.format(food.price)}</div>
            
             <StareScore total={food.totalRating} ratinsnumber={food.reviewCount}/>
         </div>

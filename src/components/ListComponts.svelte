@@ -1,4 +1,5 @@
 <script>
+	import { ToCurrency } from '$lib/utils/utils';
 	import BookmarkComponent from './BookmarkComponent.svelte';
 	import StarScoreIndex from './StarScoreIndex.svelte';
 	import StareScore from './StareScore.svelte';
@@ -24,7 +25,7 @@
     <BookmarkComponent data={food}/> 
    </div>
   <div class="">
-    <h1 class="capitalize my-2">{food.name} | ₦{food.price}</h1>
+    <h1 class="capitalize my-2">{food.name} | {ToCurrency.format(food.price)}</h1>
     <StarScoreIndex total={food.totalRating} ratinsnumber={food.reviewCount} />
   </div>
 </div>

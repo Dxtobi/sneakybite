@@ -20,3 +20,10 @@ export function searchArray(array, searchString) {
   } 
   return false;
 }
+
+
+
+export let ToCurrency = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'NGN',
+});

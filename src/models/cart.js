@@ -45,6 +45,10 @@ const CartSchema = new mongoose.Schema(
           type: Number,
           required: true,
         },
+        id: {
+          type: mongoose.Schema.Types.ObjectId,
+          required: true,
+        },
       },
     ],
   },
