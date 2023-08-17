@@ -20,7 +20,7 @@
 	{#key data.url}
 		<main
 		in:fly={{ x: -200, duration: 300, delay: 300 }}
-		out:fly={{ x: 200, duration: 300 }}
+		out:fly={{ x: 200, duration: 350 }}
 		 class="w-full py-16 md:w-1/2 m-auto">
 			
 			<slot />

@@ -3,9 +3,11 @@
 	import RiSystemDeleteBinLine from 'svelte-icons-pack/ri/RiSystemDeleteBinLine';
 	// @ts-ignore
 	import Icon from 'svelte-icons-pack/Icon.svelte';
+	import UserAdressForm from '../../components/UserAdressForm.svelte';
 	export let data;
-    let requesting = false
+    let requesting = false;
 	let cart_items = data.cart?.items;
+	let displayAddressForm = false;
 	$: total_price = totalPrice(cart_items);
 
 	/**
@@ -91,7 +93,7 @@
 			{!cart_items ? 0 : cart_items.length}
 		</div>
 	</div>
-<div class="text-center h-[20px]">{requesting? 'Updating...' : ''}</div>
+<div class="text-center h-[20px] my-10">{requesting? 'Updating...' : ''}</div>
 	<div>
 		{#if cart_items}
 			{#each cart_items as item}
@@ -134,17 +136,21 @@
 	</div>
 </div>
 
-<div class="fixed bottom-0 w-[90%] m-auto rounded-lg bg-[#ffffffc6] h-[200px] p-5 left-0 right-0 inline-block backdrop-blur-[5px] shadow-xl">
+<div class="z-[77] fixed bottom-0 w-[90%] md:w-[23%]   rounded-lg bg-[#ffffffc6] h-[200px] p-5 left-0 right-0 md:right-1 md:left-auto md:m-4 md:bottom-5 m-auto inline-block backdrop-blur-[5px] shadow-xl ">
 	<div class="flex justify-between items-center mb-5 border-2 border-[#141414] p-1">
 		<div>{!cart_items ? 0 : cart_items.length} items</div>
 		<div
-			class="  rounded-sm bg-black h-[30px] px-4 text-center grid place-content-center text-white"
+			class="  rounded-sm bg-[#ff7300] h-[30px] px-4 text-center grid place-content-center text-white"
 		>
 			{ToCurrency.format(total_price)}
 		</div>
 	</div>
 	<div class="flex justify-between items-center">
 		<a href="/" class="px-5 py-2 border-2 border-[#141414] rounded-sm">Back</a>
-		<button class="px-5 py-2 bg-[#141414] text-white rounded-sm" disabled={requesting}>Place Order</button>
+		<button class="px-5 py-2 bg-[#ff7300] text-white rounded-sm" disabled={requesting} on:click={()=>displayAddressForm = !displayAddressForm }>Place Order</button>
 	</div>
 </div>
+
+{#if displayAddressForm}
+<UserAdressForm bind:displayAddressForm={displayAddressForm} />
+{/if}

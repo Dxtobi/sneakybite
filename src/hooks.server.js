@@ -8,6 +8,7 @@ import { OrderModel } from './models/orders';
 import { FoodModel } from './models/food';
 import { CartModel } from './models/cart';
 import { TransactionModel } from './models/transaction';
+import { AddressDataModel } from './models/location';
 
 // import { serializeNonPOJOs } from '$lib/utils/utils';
 
@@ -25,7 +26,7 @@ export const handle = async ({ event, resolve }) => {
     event.locals.RATING =  RatingModel,
     event.locals.CART =  CartModel,
     event.locals.TRANSACTION =  TransactionModel
-    
+    event.locals.ADDRESS =  AddressDataModel
      // console.log(event.locals.USERS)
     
      // find the user based on the session

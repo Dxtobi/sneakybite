@@ -12,9 +12,9 @@ import { navigating } from '$app/stores';
         height:20px;
         width:100%;
         background:
-            linear-gradient(#ffffff 0 0),
-            linear-gradient(#ff0278 0 0),
-            #ff7300;
+            linear-gradient(#ffffff92 0 0),
+            linear-gradient(#0b0b0b62 0 0),
+            #ff730064;
         background-size: 60% 100%;
         background-repeat: no-repeat;
         animation: p6 3s infinite;

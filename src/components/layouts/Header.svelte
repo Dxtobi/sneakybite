@@ -46,7 +46,7 @@
 
 {#if openSideBar}
 	<div
-		class="min-h-[50vh] fixed bottom-0 bg-[#c6c5c5a4] w-full rounded-t-2xl flex flex-col gap-5 py-5 backdrop-blur z-40"
+		class="min-h-[50vh] fixed bottom-0 bg-[#c6c5c5a4] w-full rounded-t-2xl flex flex-col gap-5 py-5 backdrop-blur z-[100] "
 		in:fly={{ y: 100, duration: 300 }}
 	>
 		<button on:click={() => (openSideBar = !openSideBar)} class="w-full p-2 bg-black text-white">Cancel</button>

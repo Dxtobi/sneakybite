@@ -4,6 +4,7 @@
 import type { Cart, CartModelType } from "./models/cart";
 import type { Customer, CustomerModelType } from "./models/customer";
 import type { Food, FoodModelType } from "./models/food";
+import type { AddressData, AddressDataModelType } from "./models/location";
 import type { Order, OrderModelType } from "./models/orders";
 import type { RatingModelType } from "./models/ratings";
 import type { Transaction, TransactionModelType } from "./models/transaction";
@@ -20,6 +21,7 @@ declare global {
 			RATING: RatingModelType,
 			CART: CartModelType,
 			TRANSACTION: TransactionModelType,
+			ADDRESS:AddressDataModelType
 			customer: Customer| null,
 			foods: Array<Food>,
 			orders: Array<Order>,
@@ -31,7 +33,8 @@ declare global {
 			foods: Array<Food>,
 			orders: Array<Order>,
 			transactions: Array<Transaction>,
-			cart:Cart
+			cart: Cart,
+			address:AddressData
 		 }
 		// interface Platform {}
 	}
