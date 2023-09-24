@@ -198,7 +198,7 @@
 	<h2 class="   my-4">Popular</h2>
 	<div class=" scroll-container">
 		{#each famuse as fam}	
-			<div class="scroll-item   w-[30vw]  p-2 bg-[#ffffff] rounded-lg ">
+			<div class="scroll-item   w-[30vw] md:w-[20%]  p-2 bg-[#ffffff] rounded-lg ">
 				<a href={`/food/${fam._id}`} class="  rounded-2xl ">
 					<img src={fam.imageURL} alt="" class="w-[100%] h-[100px] rounded-lg object-cover" />
 			
@@ -232,7 +232,7 @@
 
 <section class="mt-4 p-3">
     <h2 class="mb-5">Recommended</h2>
-    <div class=" columns-2 py-2">
+    <div class=" columns-2 py-2 md:columns-4">
         <a href="/all" class=" justify-between gap-1 p-1 rounded-lg bg-[#fbe5ab] items-center mb-2 w-full aspect-auto col-item inline-flex">
             <div class="bg-white rounded-lg w-[35%] h-[30px] flex justify-center items-center shadow-sm">
                 <Icon src={AiOutlineArrowRight} />

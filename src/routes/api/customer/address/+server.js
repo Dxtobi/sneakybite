@@ -27,10 +27,6 @@ export async function PUT({  url, locals }) {
              { new: true })
      }
  
-     
-     
-        
-         
      const resp = await locals.CART.findOne({customer:locals.customer._id}).populate('items.food')
      if (!resp) {
          console.log(resp)

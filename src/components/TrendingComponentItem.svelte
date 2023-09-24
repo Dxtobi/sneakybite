@@ -9,7 +9,7 @@
 	 export let food;
 </script>
 
-<div class="scroll-item ml-3  w-[60vw]  p-2 bg-[#ffffff] rounded-lg ">
+<div class="scroll-item ml-3  w-[60vw] md:w-[20%] p-2 bg-[#ffffff] rounded-lg ">
 	<a href={`/food/${food._id}`} class="  rounded-2xl ">
 		<img src={food.imageURL} alt="" class="w-[100%] h-[100px] rounded-lg object-cover" />
 		<div class="absolute right-2 top-3">

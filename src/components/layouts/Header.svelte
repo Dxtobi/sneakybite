@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import CgMenuRight from 'svelte-icons-pack/cg/CgMenuRight';
 	import RiFinanceShoppingCartLine from 'svelte-icons-pack/ri/RiFinanceShoppingCartLine';
+	
 	// @ts-ignore
 	import Icon from 'svelte-icons-pack/Icon.svelte';
 	import { fly, fade, slide } from 'svelte/transition';
@@ -39,8 +40,10 @@
 		{:else}
 			<div>
 				<a href="/login" class=" font-bold">LOGIN</a>
+
 			</div>
 		{/if}
+		
 	</div>
 </header>
 
